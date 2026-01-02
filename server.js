@@ -2,7 +2,7 @@
  
  const express = require('express')
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT;
 
 app.use(express.json()); // ADDED EXPRESS MIDDLEWARE WHICH IS EXPRESS.JSON
 
