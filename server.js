@@ -12,7 +12,7 @@ app.post('/echo', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Hi I am present, my name is fiyinfoluwa!')
+  res.send('The assignment says my WEEK TWO API')
 })
 
 app.listen(port, () => {
