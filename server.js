@@ -8,6 +8,7 @@ app.post('/echo', (req, res) => {
   console.log("req.body ")
   res.json({echoed: req.body });   // REQ.BODY IS NOW AVAILABLE
 });
+
 app.get('/', (req, res) => {
   res.send('Hi I am present, my name is fiyinfoluwa!')
 })
