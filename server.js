@@ -4,8 +4,8 @@ const port = 3000
 
 app.use(express.json()); // ADDED EXPRESS MIDDLEWARE WHICH IS EXPRESS.JSON
 
-app.post('./echo', (req, res) => {
-  res.json( { "echoed: req.body "})
+app.post('/echo', (req, res) => {
+  res.json({echoed: req.body })
 })
 app.get('/', (req, res) => {
   res.send('Hi I am present, my name is fiyinfoluwa!')
