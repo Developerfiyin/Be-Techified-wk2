@@ -11,9 +11,15 @@ app.post('/user', (req, res) => {
   res.json({echoed: req.body });   // REQ.BODY IS NOW AVAILABLE
 });
 
-app.get('/', (req, res) => {
+app.get('/user/:id', (req, res) => {
+  const id = req.params.id
+  console.log(id)
   res.send('The assignment says my WEEK TWO API')
-})
+});
+
+app.get('/', (req, res) => {
+  res.send('The assignment says WEEK TWO API is ready!')
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
