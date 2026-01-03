@@ -14,7 +14,7 @@ app.post('/user', (req, res) => {
 app.get('/user/:id', (req, res) => {
   const id = req.params.id
   console.log(id)
-  res.send('The assignment says my WEEK TWO API')
+  res.send(id)
 });
 
 app.get('/', (req, res) => {
